@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Registration Form</title>
+</head>
+<body>
+    <h2>Placement Registration Form</h2>
+    <form action="/submit_placement" method="post">
+        <!-- Personal Details -->
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <!-- Educational Details -->
+        <fieldset>
+            <legend>Educational Details</legend>
+            <label for="university">University/College:</label><br>
+            <input type="text" id="university" name="university" required><br><br>
+
+            <label for="degree">Degree:</label><br>
+            <select id="degree" name="degree">
+                <option value="btech">B.Tech</option>
+                <option value="bca">BCA</option>
+                <option value="mba">MBA</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="cgpa">CGPA/Percentage:</label><br>
+            <input type="number" id="cgpa" name="cgpa" step="0.01" min="0" max="10" required><br><br>
+
+            <label for="specialization">Specialization:</label><br>
+            <input type="text" id="specialization" name="specialization" required><br><br>
+        </fieldset>
+
+        <!-- Skills and Preferences -->
+        <fieldset>
+            <legend>Skills and Preferences</legend>
+            <label for="skills">Skills (Comma separated):</label><br>
+            <textarea id="skills" name="skills" rows="3" cols="30" placeholder="e.g., Java, Python, SQL" required></textarea><br><br>
+
+        <!-- Submit -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
