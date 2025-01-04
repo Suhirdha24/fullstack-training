@@ -1,25 +1,37 @@
-import "./App.css";
-import About from "./Components/FunctionalComponents/About";
-import Contact from "./Components/FunctionalComponents/Contact";
-import Gallery from "./Components/FunctionalComponents/Gallery";
-import Home from "./Components/FunctionalComponents/Home";
-import NavBar from "./Components/FunctionalComponents/NavBar";
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
-
-function App() {
-  return (
-    <div>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element = {<Home />} />
-          <Route path="/about" element= {<About college = "Kongu Engineering" clg1 = "Kongu Arts" clg2 = "Naturopathy"/>} />
-          <Route path="/gallery" element = {<Gallery />} />
-          <Route path="/contact" element = {<Contact />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+ul {
+  padding: 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  justify-content: space-evenly;
+  list-style-type: none;
+  background-color: rgb(94, 89, 23);
+  color: azure;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-export default App;
+li {
+  cursor: pointer;
+  padding: 10px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li:hover {
+  background-color: white;
+  color: rgb(210, 207, 30);
+  border-radius: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: azure;
+}
+
+.link.active {
+  font-weight: bold;
+  color: white;
+}
