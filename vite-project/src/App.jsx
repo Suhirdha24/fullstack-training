@@ -1,17 +1,16 @@
-import React from "react";
+import "./App.css";
+import About from "./Components/FunctionalComponents/About";
+import Contact from "./Components/FunctionalComponents/Contact";
+import Gallery from "./Components/FunctionalComponents/Gallery";
+import Home from "./Components/FunctionalComponents/Home";
+import NavBar from "./Components/FunctionalComponents/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./Components/FunctionalComponents/NavBar.jsx";
-import Gallery from "./Components/FunctionalComponents/Gallery.jsx";
-import Home from "./Components/FunctionalComponents/Home.jsx";
-import About from "./Components/FunctionalComponents/About.jsx";
-import Contact from "./Components/FunctionalComponents/Contact.jsx";
-import Footer from "./Components/FunctionalComponents/Footer.jsx";
-import UseEffect from "./Components/FunctionalComponents/UseEffect.jsx";
-import UseRefExample from "./Components/FunctionalComponents/UseRef.jsx";
-import UseContext from "./Components/FunctionalComponents/UseContext.jsx";
-import UseMemo from "./Components/FunctionalComponents/UseMemo.jsx";
-import Login from "./Components/FunctionalComponents/Login.jsx";
-import Signup from "./Components/FunctionalComponents/Signup.jsx";
+import UseEffect from "./Components/FunctionalComponents/UseEffect";
+import UseRef from "./Components/FunctionalComponents/UseRef";
+import ExamResults from "./Components/FunctionalComponents/UseContext";
+import UseMemo from "./Components/FunctionalComponents/UseMemo";
+import SignupForm from "./Components/FunctionalComponents/Signup";
+import LoginForm from "./Components/FunctionalComponents/Login";
 
 function App() {
   return (
@@ -32,14 +31,13 @@ function App() {
           />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/use-effect" element={<UseEffect />} />
-          <Route path="/use-ref" element={<UseRefExample />} />
-          <Route path="/use-context" element={<UseContext />} />
-          <Route path="/use-memo" element={<UseMemo />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/use-effect" element={<UseEffect />}/>
+          <Route path="/use-ref" element = {<UseRef />}></Route>
+          <Route path="/use-context" element = {<ExamResults />} />
+          <Route path="/use-memo" element = {<UseMemo />}/>
+          <Route path="/signup" element = {<SignupForm />}/>
+          <Route path="/login" element = {<LoginForm />}/>
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );
