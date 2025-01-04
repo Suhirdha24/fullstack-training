@@ -14,8 +14,6 @@ function Footer() {
                     <input type="text" placeholder="Enter name"></input><br/>
                     <label>Email : </label>
                     <input type="email" placeholder="Enter mailid"></input><br/>
-                    <label>Contact : </label>
-                    <input type="number" placeholder="Enter mobile number"></input><br/>
                 </form>
                 <button onClick={submit}>SUBMIT</button>
             </footer>
