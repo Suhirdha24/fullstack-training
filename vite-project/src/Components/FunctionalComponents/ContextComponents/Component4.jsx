@@ -1,6 +1,5 @@
-import StudentResults from './StudentResults'
-
-var Component4=()=>{
+import StudentResults from './StudentResults';
+var Component4 = () =>{
     return(
        <section>
         <h1>In component4</h1>
@@ -8,4 +7,4 @@ var Component4=()=>{
        </section>
     )
     }
-    export default Component4
+    export default Component4;
