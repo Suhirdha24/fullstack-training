@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom"; // Correct import for useNavigate
 
@@ -10,7 +10,7 @@ function Login() {
     const login = async (event) => {
         event.preventDefault();
         try {
-            const req = await axios.post("http://localhost:3001/login", {
+            const req = await axios.post("https://fullstack-training-qhfq.onrender.com/login", {
                 email,
                 password,
             });

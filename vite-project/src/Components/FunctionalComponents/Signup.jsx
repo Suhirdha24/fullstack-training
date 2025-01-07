@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -12,7 +12,7 @@ function SignUp() {
     var signup=async(event)=>
     {
         event.preventDefault()//stops page refresh
-        var req=await axios.post("http://127.0.0.1:3001/signup",
+        var req=await axios.post("https://fullstack-training-qhfq.onrender.com/signup",
             {
                 firstName:firstName,
                 lastName:lastName,
